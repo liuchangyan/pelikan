@@ -17,19 +17,19 @@ http_port = "9998"
 # interfaces listening on
 host = "0.0.0.0"
 # port listening on
-port = "12321"
+port = "12321" #SERVERPORT
 # epoll timeout in milliseconds
 timeout = 100
 # epoll max events returned
-nevent = 1024
+nevent = 10240
 
 [worker]
 # epoll timeout in milliseconds
 timeout = 100
 # epoll max events returned
-nevent = 1024
+nevent = 10240
 # number of worker threads
-threads = 1
+threads = 224 #WORKTHREADS
 
 # storage configuration
 [seg]
